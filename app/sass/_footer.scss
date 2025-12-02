@@ -1,3 +1,44 @@
 @use "fonts" as *;
 @use "vars" as *;
 
+// start footer style
+.footer {
+    padding-top: 80px;
+}
+.cta {
+    text-align: center;
+    padding-bottom: 78px;
+    .h2 {
+        width: 600px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+.cta__logo {
+    width: 69px;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__menu {
+    line-height: 1.553;
+    padding-bottom: 60px;
+    a {
+        display: block;
+    }
+}
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 100px;
+    a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+//end footer style

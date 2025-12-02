@@ -2,7 +2,6 @@
 @use "fonts" as *;
 @use "header";
 @use "footer";
-@use "contact";
 
 
 //start global styles
@@ -27,12 +26,19 @@ body {
 .container {
     width: 1190px;
     max-width: 91.2vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.container--xs {
+    width: 1040px;
+    max-width: 91.2vw;
 }
 a {
     color: inherit;
     text-decoration: none;
+}
+a:hover {
+    color: inherit;
 }
 .button {
     padding: 16.38px 21px;
@@ -42,18 +48,37 @@ a {
     font-weight: 500;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
+    margin-top: 25px;
+    display: inline-block;
+}
+p {
+    margin-bottom: 0;
 }
 .button--secondary {
     background-color: rgba(27, 51, 79, 1);
     color: $aqua;
 }
-
+.button--blue {
+    background-color: rgba(128, 184, 255, 1);
+    color: $blue;
+}
+.button--yellow {
+    background-color: $yellow;
+    color: $blue;
+}
 .button:hover {
     background-color: $aqua-hover;
+    color: $blue;
 }
 .button--secondary:hover {
     background-color: rgba(64, 92, 126, 1);
-
+    color: $aqua;
+}
+.button--blue:hover {
+    background: rgba(161, 203, 255, 1);
+}
+.button--yellow:hover {
+    background-color: rgba(255, 236, 129, 1);
 }
 .buttons-wrapper {
     gap: 15px;
@@ -61,12 +86,15 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 25px;
+}
+.buttons-wrapper--center {
+    justify-content: center;
 }
 .h1 {
     font-size: 62px;
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 1.2;
 }
 .h2 {
     font-size: 37px;
@@ -77,6 +105,10 @@ a {
 }
 .h2--s {
     font-size: 32px;
+    font-weight: 700;
+}
+.h3 {
+    font-size: 25px;
     font-weight: 700;
 }
 .h4 {
@@ -94,6 +126,25 @@ a {
 img {
     height: auto;
 }
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-header {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    .h2 {
+        margin-bottom: 15px;
+    }
+    .icon-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 13px;
+    }
+}
 .social-icon {
     background-color: $violet;
     width: 45px;
@@ -106,6 +157,13 @@ img {
 }
 .social-icon:hover {
     background-color: rgba(161, 203, 255, 1);
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    .social-icon {
+        margin-right: 14px;
+    }
 }
 //end global styles
 
@@ -157,6 +215,7 @@ img {
 }
 .card:hover {
     background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
+    color: #fff;
 }
 
 
@@ -179,6 +238,154 @@ img {
     display: block;
     margin-bottom: 25px;
 }
-
+.card__arrow {
+    margin-top: 20px;
+    display: block;
+}
 //end cards section styles
+
+//start text-image section style
+.text-image-section {
+    .row {
+        display: flex;
+        align-items: center;
+    }
+}
+.text-image__content {
+    width: 414px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.illustration {
+    max-width: 100%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+//end text-iage section style
+
+//start info cards section style
+.info-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.info-card {
+    border: 1px solid #264160;
+    width: 31%;
+    padding: 23px 23px 32px 23px;
+    border-radius: 8px;
+    
+}
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #051323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-card {
+    .h4 {
+        margin-top: 17px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+//end info cards section style
+
+//start benefits section
+.benefits {
+    background: url('../img/benefits.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 94px;
+    margin-top: 60px;
+}
+.benefits__row {
+    width: 1126px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+    display: flex;
+    gap: 3%;
+    margin-bottom: 25px;
+}
+.benefits__card {
+    width: 32%;
+    border: 1px solid #2A486B;
+    border-radius: 8px;
+    background: #091A2E;
+    padding: 50px 37px;
+    text-align: center;
+    .icon-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 19px;
+    }
+    .h3 {
+        margin-bottom: 20px;
+    }
+}
+.benefits__list {
+    margin-top: 57px;
+}
+//end benefits style
+
+//start integrations style
+.integrations__content {
+    width: 1126px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(27, 51, 79, 1);
+    padding-top: 43px;
+    padding-bottom: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.integrations__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1693px;
+    gap: 13.5px;
+    margin-top: 59px;
+    transform: rotate(-2deg);
+    margin-left: -106px;
+    margin-bottom: 60px;
+
+}
+.integration__item {
+    width: 265px;
+    height: 162px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    transition: all 0.3s;
+    img {
+        max-width: 80%;
+    }
+}
+.integration__item:hover {
+    opacity: 1;
+}
+
+//end integrations style
+
+
+
+@import "about-section";
+@import "slider-section";
 @import "media";

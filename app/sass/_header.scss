@@ -10,6 +10,9 @@
         width: 1350px;
         max-width: 91.2vw;
     }
+    .button {
+        margin-top: 0;
+    }
 }
 .menu {
     ul {
@@ -204,7 +207,7 @@
             // box-shadow: 0 0 0 0.7px rgba(27, 51, 79, 1) ,  0 0 30px 0 rgba(4, 17, 33, 0.42);
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            background-color: rgba(9, 26, 46, 0.96);
+            background-color: rgba(9, 26, 46, 0.99);
             position: relative;
             border: 1px solid $blue-light;
             border-bottom: none;
@@ -219,12 +222,12 @@
             left: -1px;
             top: 100%;
             width: 100%;
-            background-color: rgba(9, 26, 46, 0.96);
+            background-color: rgba(9, 26, 46, 0.99);
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             border: 1px solid $blue-light;
             border-top: none;
-            padding-bottom: 100px;
+            padding-bottom: 38px;
             ul {
                 flex-direction: column;
                 width: 100%;
