@@ -210,6 +210,60 @@
 	.benefits {
 		background-size: 1200px;
 	}
+	.hero-section--2 {
+		.buttons-wrapper {
+			position: static;
+		}
+		.hero-section__content {
+			padding-bottom: 30px;
+		}
+	}
+	.hero-image {
+		margin-top: 60px;
+		max-width: 90%;
+	}
+	.info-cards-section .h2 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.info-cards-section--2 .h2 {
+		margin-bottom: 30px;
+	}
+	.text-section {
+		padding-top: 20px;
+	}
+	.text-image-section .illustration {
+		padding-bottom: 20px;
+	}
+	.text-info-section {
+		padding-top: 20px;
+	}
+	.cta-card {
+		margin-top: 60px;
+	}
+	.faq {
+		padding-top: 20px;
+	}
+	.plans__list {
+		flex-direction: column;
+	}
+	.plans__item {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.plans__item-row {
+		text-align: left;
+	}
+	.plans {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.h2 {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 	
 }
 
@@ -219,6 +273,7 @@
 	body {
 		background-size: 1027px;
 		background-position: top right -200px;
+		font-size: 16px;
 	}
 	.h1 {
 		font-size: 40px;
@@ -309,6 +364,29 @@
 	.integrations__list {
 		margin-bottom: 20px;
 	} 
+	.faq__item.active .faq__item-text {
+		max-width: 100%;
+	}
+	.form-row {
+		flex-direction: column;
+		.input-wrapper {
+			width: 100%;
+		}
+	}
+	.form-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		.h2 {
+			width: 100%;
+			br {
+				display: none;
+			}
+		}
+	}
+	.form-section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	
 

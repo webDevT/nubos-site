@@ -26,6 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Toggle FAQ items
+    const faqHeaders = document.querySelectorAll('.faq__item-header');
+
+    faqHeaders.forEach(function(header) {
+        header.addEventListener('click', function() {
+            const parentItem = header.closest('.faq__item');
+            if (parentItem) {
+                parentItem.classList.toggle('active');
+            }
+        });
+    });
+
     // Toggle submenu on click for mobile devices
     const menuItemsWithSubmenu = document.querySelectorAll('.menu__item--has-submenu');
     
