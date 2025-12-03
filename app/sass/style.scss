@@ -651,8 +651,64 @@ img {
         width: 48%;
     }
 }
-
 //end form style 
+
+//start knoweledge page
+.hero-knowledge {
+    text-align: center;
+    .sub-title {
+        margin-bottom: 14px;
+    }
+    .h1 {
+        margin-bottom: 40px;
+    }
+}
+.hero-knowledge__image {
+    width: 100%;
+    border-radius: 8px;
+}
+//end knoweledge page
+
+//start statistic page
+.statistic .row {
+    display: flex;
+    align-items: stretch;
+}
+.statistic .col-md-4 {
+    display: flex;
+}
+.statistic-item {
+    border: 1px solid #264160;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    width: 310px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.statistic__value {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.statistic-item--green {
+    .statistic__value {
+        color: $aqua;
+    }
+}
+.statistic-item--yellow {
+    .statistic__value {
+        color: $yellow;
+    }
+}
+.statistic-item--purple {
+    .statistic__value {
+        color: rgba(255, 167, 244, 1);
+    }
+}
+//end statistic page 
 
 @import "about-section";
 @import "slider-section";

@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     border-top: 1px solid rgba(#fff, 0.1);
     margin-top: 110px;
+    padding-bottom: 100px;
 }
 .about__photo-wrapper{
     position: relative;
@@ -81,5 +82,8 @@
         background-size: 1200px;
         background-position: top 0px right -50px;
         margin-top: 50px;
+    }
+    .about {
+        padding-bottom: 60px;
     }
 }

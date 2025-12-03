@@ -1281,6 +1281,66 @@ img {
   width: 48%;
 }
 
+.hero-knowledge {
+  text-align: center;
+}
+.hero-knowledge .sub-title {
+  margin-bottom: 14px;
+}
+.hero-knowledge .h1 {
+  margin-bottom: 40px;
+}
+
+.hero-knowledge__image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.statistic .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.statistic .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statistic-item {
+  border: 1px solid #264160;
+  text-align: center;
+  padding: 25px;
+  border-radius: 8px;
+  width: 310px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.statistic__value {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.statistic-item--green .statistic__value {
+  color: #3FF1B2;
+}
+
+.statistic-item--yellow .statistic__value {
+  color: rgb(255, 226, 67);
+}
+
+.statistic-item--purple .statistic__value {
+  color: rgb(255, 167, 244);
+}
+
 .about {
   padding-top: 150px;
   background-image: url(../img/about.svg);
@@ -1289,6 +1349,7 @@ img {
   background-repeat: no-repeat;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 110px;
+  padding-bottom: 100px;
 }
 
 .about__photo-wrapper {
@@ -1370,6 +1431,9 @@ img {
     background-size: 1200px;
     background-position: top 0px right -50px;
     margin-top: 50px;
+  }
+  .about {
+    padding-bottom: 60px;
   }
 }
 .slider-header {
@@ -1945,6 +2009,19 @@ img {
   .form-section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .statistic .statistic-item {
+    width: 100%;
+  }
+  .statistic .col-md-4 {
+    margin-bottom: 20px;
+  }
+  .hero-knowledge .h1 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .statistic {
+    padding-top: 0;
   }
 }
 /* Extra Small Devices, Phones */
