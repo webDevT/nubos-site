@@ -299,13 +299,22 @@ img {
     gap: 40px;
 }
 .info-card {
-    border: 1px solid #264160;
+    background-color: #264160;
     width: 31%;
+    border-radius: 8px;
+    padding: 1px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.info-card__wrapper {
+    background: $blue;
     padding: 23px 23px 32px 23px;
     border-radius: 8px;
-    background: $blue;
-    
 }
+.info-card:hover {
+    background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
+}
+
 .icon-wrapper {
     width: 60px;
     height: 60px;
@@ -346,11 +355,11 @@ img {
 }
 .benefits__card {
     width: 32%;
-    border: 1px solid #2A486B;
+    background: #2A486B;
     border-radius: 8px;
-    background: #091A2E;
-    padding: 50px 37px;
     text-align: center;
+    padding: 1px;
+    overflow: hidden;
     .icon-wrapper {
         margin-left: auto;
         margin-right: auto;
@@ -359,6 +368,14 @@ img {
     .h3 {
         margin-bottom: 20px;
     }
+}
+.benefits__card-wrapper {
+    background: #091A2E;
+    padding: 50px 37px;
+    border-radius: 8px;
+}
+.benefits__card:hover {
+    background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
 }
 .benefits__list {
     margin-top: 57px;
@@ -434,19 +451,30 @@ img {
     margin-bottom: 0px;
 }
 .cta-card {
-    border: 1px solid #264160;
     border-radius: 8px;
-    text-align: center;
-    padding: 32px 27px; 
+    text-align: center;  
     width: 300px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background: #264160;
+    overflow: hidden;
+    padding: 1px;
+    transition: all 0.3s;
     .button {
         width: 184px;
         max-width: 100%;
     }
 }
+.cta-card__wrapper {
+   padding: 32px 27px;  
+   border-radius: 8px;
+   background: $blue;
+}
+.cta-card:hover {
+   background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%); 
+}
+
 .cta__photo {
     width: 116px;
     height: 116px;
@@ -465,10 +493,20 @@ img {
 //start faq style
 .faq__item {
     background: $blue;
-    border: 1px solid #2A486B;
-    padding: 16px 22px;
+    background: #2A486B;  
     border-radius: 8px;
     margin-bottom: 21px;
+    overflow: hidden;
+    padding: 1px;
+}
+.faq__item-wrapper {
+    background: $blue;
+    padding: 16px 22px;
+    border-radius: 8px;
+}
+.faq__item:hover,
+.faq__item.active {
+    background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
 }
 .faq__item-text {
     display: none;
@@ -493,7 +531,7 @@ img {
    }
 }
 .faq__item-btn {
-    padding-left: 15px;
+    margin-left: 15px;
 }
 //end faq style
 
@@ -677,15 +715,26 @@ img {
     display: flex;
 }
 .statistic-item {
-    border: 1px solid #264160;
+    background: #264160;
     text-align: center;
-    padding: 25px;
     border-radius: 8px;
     width: 310px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    padding: 1px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.statistic-item__wrapper {
+    padding: 25px;
+    background: $blue;
+    border-radius: 8px;
+    height: 100%;
+}
+.statistic-item:hover {
+    background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
 }
 .statistic__value {
     font-size: 45px;
