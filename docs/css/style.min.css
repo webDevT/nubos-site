@@ -492,8 +492,7 @@ body * {
 body {
   font-family: "Roboto", sans-serif;
   background: rgb(9, 26, 46);
-  background-image: url(../img/header-image.svg);
-  background-size: 100vw;
+  background-image: url(../img/header-image.png);
   background-position: top right;
   background-repeat: no-repeat;
   color: #fff;
