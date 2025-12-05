@@ -33,6 +33,9 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.contact-list {
+		margin-left: 0;
+	}
 	
     
 }
@@ -399,6 +402,28 @@
 	}
 	.statistic {
 		padding-top: 0;
+	}
+	.testimonials__content-wrapper {
+		padding: 30px 15px;
+		align-items: flex-start;
+	}
+	.testimonials__photo {
+		width: 60px;
+		min-width: 60px;
+		height: 60px;
+		margin-right: 15px;
+	}
+	.testimonials {
+		padding-top: 0;
+	}
+	.contact {
+		padding-top: 0;
+	}
+	.hero-section .h1 {
+		width: 100%;
+	}
+	.contact-list {
+		margin-top: 100px;
 	}
 
 	

@@ -54,6 +54,8 @@ a:hover {
     margin-top: 25px;
     display: inline-block;
     text-align: center;
+    border: none;
+    outline: none;
 }
 p {
     margin-bottom: 0;
@@ -642,7 +644,8 @@ img {
     margin-bottom: 10px;
     line-height: 1;
 }
-.input {
+.input,
+.textarea {
     display: block;
     width: 100%;
     background-color: #24D596;
@@ -653,6 +656,11 @@ img {
     padding: 0 15px;
     color: $blue;
     font-family: $primary-font;
+}
+.textarea {
+    height: 132px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .select {
     display: block;
@@ -757,6 +765,80 @@ img {
     }
 }
 //end statistic page 
+
+//start testimonials style
+.testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.testimonials__content {
+    width: 100%;
+    background: rgba(27, 51, 79, 1);  
+    overflow: hidden;
+    padding: 1px;
+    border-radius: 8px;
+}
+.testimonials__content-wrapper {
+    background-image: url('../img/testimonials-bg.png');
+    background-size: cover;
+    padding: 50px 45px;
+    display: flex;
+    align-items: center;
+}
+.testimonials__photo {
+    width: 108px;
+    height: 108px;
+    min-width: 108px;
+    margin-right: 43px;
+}
+.testimonials__text {
+    margin-bottom: 20px;
+}
+.testimonials__content-wrapper {
+    display: flex;
+    align-items: center;
+}
+//end testimonials style
+
+//start contact page style
+.contact {
+    .label {
+        color: rgba(255, 255, 255, 1);
+    }
+    .input,
+    .select,
+    .textarea {
+        background-color: rgba(27, 51, 79, 1);
+        color: #fff;
+    }
+    .select {
+        background-image: url('../img/arrow-down-white.svg');
+    }
+    .button {
+        width: 168px;
+        max-width: 100%;
+    }
+}
+.contact-list {
+    margin-left: 90px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    .icon-wrapper {
+        min-width: 48px;
+        width: 48px;
+        height: 48px;
+        margin-right: 17px;
+        img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+    }
+}
+//end contact page style
 
 @import "about-section";
 @import "slider-section";
