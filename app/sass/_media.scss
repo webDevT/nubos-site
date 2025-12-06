@@ -210,6 +210,83 @@
 	.illustration {
 		padding-bottom: 40px;
 	}
+	//start logo-animation
+	.logo-animation {
+		width: 350px;
+		height: 350px;
+		max-width: 100%;
+	}
+	.idt-icon {
+		width: 70px;
+		height: 70px;
+	}
+	.idt-icon--1 {
+		animation: rotateCircle1Mobile 60s linear infinite;
+	}
+	.idt-icon--2 {
+		animation: rotateCircle2Mobile 60s linear infinite;
+	}
+	.idt-icon--3 {
+		animation: rotateCircle3Mobile 60s linear infinite;
+	}
+	.idt-icon--4 {
+		animation: rotateCircle4Mobile 60s linear infinite;
+	}
+	.idt-icon--5 {
+		animation: rotateCircle5Mobile 60s linear infinite;
+	}
+	.idt-icon--6 {
+		animation: rotateCircle6Mobile 60s linear infinite;
+	}
+	@keyframes rotateCircle1Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(0deg) translateY(-148px) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(360deg) translateY(-148px) rotate(-360deg);
+		}
+	}
+	@keyframes rotateCircle2Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(60deg) translateY(-148px) rotate(-60deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(420deg) translateY(-148px) rotate(-420deg);
+		}
+	}
+	@keyframes rotateCircle3Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(120deg) translateY(-148px) rotate(-120deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(480deg) translateY(-148px) rotate(-480deg);
+		}
+	}
+	@keyframes rotateCircle4Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(180deg) translateY(-148px) rotate(-180deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(540deg) translateY(-148px) rotate(-540deg);
+		}
+	}
+	@keyframes rotateCircle5Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(240deg) translateY(-148px) rotate(-240deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(600deg) translateY(-148px) rotate(-600deg);
+		}
+	}
+	@keyframes rotateCircle6Mobile {
+		0% {
+			transform: translate(-50%, -50%) rotate(300deg) translateY(-148px) rotate(-300deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(660deg) translateY(-148px) rotate(-660deg);
+		}
+	}
+	//end logo-animation
 	.benefits {
 		background-size: 1200px;
 	}
@@ -350,23 +427,16 @@
 	.benefits__list {
 		margin-top: 40px;
 	}
-	.benefits__card {
-		padding: 30px 20px;
-	}
+
 	//end benefits style
 
 	.integrations {
 		padding-top: 20px;
 	}
-	.integrations__list {
-		margin-top: 40px;
-	}
 	.integrations__content {
 		padding-bottom: 0;
 	}
-	.integrations__list {
-		margin-bottom: 20px;
-	} 
+
 	.faq__item.active .faq__item-text {
 		max-width: 100%;
 	}
@@ -425,6 +495,87 @@
 	.contact-list {
 		margin-top: 100px;
 	}
+	//start logo-animation mobile
+	.logo-animation {
+		width: 280px;
+		height: 280px;
+		max-width: 90vw;
+	}
+	.idt-icon {
+		width: 56px;
+		height: 56px;
+	}
+	.idt-icon--1 {
+		animation: rotateCircle1MobileSmall 60s linear infinite;
+	}
+	.idt-icon--2 {
+		animation: rotateCircle2MobileSmall 60s linear infinite;
+	}
+	.idt-icon--3 {
+		animation: rotateCircle3MobileSmall 60s linear infinite;
+	}
+	.idt-icon--4 {
+		animation: rotateCircle4MobileSmall 60s linear infinite;
+	}
+	.idt-icon--5 {
+		animation: rotateCircle5MobileSmall 60s linear infinite;
+	}
+	.idt-icon--6 {
+		animation: rotateCircle6MobileSmall 60s linear infinite;
+	}
+	@keyframes rotateCircle1MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(0deg) translateY(-120px) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(360deg) translateY(-120px) rotate(-360deg);
+		}
+	}
+	@keyframes rotateCircle2MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(60deg) translateY(-120px) rotate(-60deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(420deg) translateY(-120px) rotate(-420deg);
+		}
+	}
+	@keyframes rotateCircle3MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(120deg) translateY(-120px) rotate(-120deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(480deg) translateY(-120px) rotate(-480deg);
+		}
+	}
+	@keyframes rotateCircle4MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(180deg) translateY(-120px) rotate(-180deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(540deg) translateY(-120px) rotate(-540deg);
+		}
+	}
+	@keyframes rotateCircle5MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(240deg) translateY(-120px) rotate(-240deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(600deg) translateY(-120px) rotate(-600deg);
+		}
+	}
+	@keyframes rotateCircle6MobileSmall {
+		0% {
+			transform: translate(-50%, -50%) rotate(300deg) translateY(-120px) rotate(-300deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(660deg) translateY(-120px) rotate(-660deg);
+		}
+	}
+	.nubos-logo {
+		width: 56px;
+	}
+	//end logo-animation mobile
+	
 
 	
 
@@ -444,6 +595,90 @@
 				width: 80%;
 			}
 		}
+	}
+	//start logo-animation extra small
+	.logo-animation {
+		width: 240px;
+		height: 240px;
+		max-width: 85vw;
+	}
+	.idt-icon {
+		width: 48px;
+		height: 48px;
+	}
+	.nubos-logo {
+		width: 48px;
+	}
+	.idt-icon--1 {
+		animation: rotateCircle1MobileXS 60s linear infinite;
+	}
+	.idt-icon--2 {
+		animation: rotateCircle2MobileXS 60s linear infinite;
+	}
+	.idt-icon--3 {
+		animation: rotateCircle3MobileXS 60s linear infinite;
+	}
+	.idt-icon--4 {
+		animation: rotateCircle4MobileXS 60s linear infinite;
+	}
+	.idt-icon--5 {
+		animation: rotateCircle5MobileXS 60s linear infinite;
+	}
+	.idt-icon--6 {
+		animation: rotateCircle6MobileXS 60s linear infinite;
+	}
+	@keyframes rotateCircle1MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(0deg) translateY(-105px) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(360deg) translateY(-105px) rotate(-360deg);
+		}
+	}
+	@keyframes rotateCircle2MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(60deg) translateY(-105px) rotate(-60deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(420deg) translateY(-105px) rotate(-420deg);
+		}
+	}
+	@keyframes rotateCircle3MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(120deg) translateY(-105px) rotate(-120deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(480deg) translateY(-105px) rotate(-480deg);
+		}
+	}
+	@keyframes rotateCircle4MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(180deg) translateY(-105px) rotate(-180deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(540deg) translateY(-105px) rotate(-540deg);
+		}
+	}
+	@keyframes rotateCircle5MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(240deg) translateY(-105px) rotate(-240deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(600deg) translateY(-105px) rotate(-600deg);
+		}
+	}
+	@keyframes rotateCircle6MobileXS {
+		0% {
+			transform: translate(-50%, -50%) rotate(300deg) translateY(-105px) rotate(-300deg);
+		}
+		100% {
+			transform: translate(-50%, -50%) rotate(660deg) translateY(-105px) rotate(-660deg);
+		}
+	}
+	//end logo-animation extra small
+	.integrations__list-wrapper {
+		padding-top: 10vw;
+		padding-bottom: 10vw;
 	}
 	
 }

@@ -401,15 +401,35 @@ img {
 }
 .integrations__list {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1693px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: auto;
     gap: 13.5px;
-    margin-top: 59px;
     transform: rotate(-2deg);
     margin-left: -106px;
-    margin-bottom: 60px;
-
+    overflow: visible;
+}
+.integrations__list--left {
+    animation: slideLeft 80s linear infinite;
+}
+.integrations__list--right {
+    animation: slideRight 80s linear infinite;
+}
+@keyframes slideLeft {
+    0% {
+        transform: rotate(-2deg) translateX(0);
+    }
+    100% {
+        transform: rotate(-2deg) translateX(-50%);
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: rotate(-2deg) translateX(-50%);
+    }
+    100% {
+        transform: rotate(-2deg) translateX(0);
+    }
 }
 .integration__item {
     width: 265px;
@@ -421,12 +441,24 @@ img {
     align-items: center;
     opacity: 0.4;
     transition: all 0.3s;
+    margin-bottom: 7px;
+    flex-shrink: 0;
     img {
         max-width: 80%;
     }
 }
 .integration__item:hover {
     opacity: 1;
+}
+.integrations__list-wrapper {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.integrations__list-wrapper .integrations__list {
+    width: max-content;
 }
 //end integrations style
 
@@ -839,6 +871,116 @@ img {
     }
 }
 //end contact page style
+
+//start nubos logo
+.logo-animation {
+    position: relative;
+    width: 474px;
+    height: 474px;
+    margin: 0 auto;
+}
+
+.nubos-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    height: auto;
+
+}
+
+.idt-icon {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+}
+
+$circle-radius: 180px;
+
+.idt-icon--1 {
+    animation: rotateCircle1 60s linear infinite;
+}
+
+.idt-icon--2 {
+    animation: rotateCircle2 60s linear infinite;
+}
+
+.idt-icon--3 {
+    animation: rotateCircle3 60s linear infinite;
+}
+
+.idt-icon--4 {
+    animation: rotateCircle4 60s linear infinite;
+}
+
+.idt-icon--5 {
+    animation: rotateCircle5 60s linear infinite;
+}
+
+.idt-icon--6 {
+    animation: rotateCircle6 60s linear infinite;
+}
+
+@keyframes rotateCircle1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateY(-#{$circle-radius}) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateY(-#{$circle-radius}) rotate(-360deg);
+    }
+}
+
+@keyframes rotateCircle2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(60deg) translateY(-#{$circle-radius}) rotate(-60deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(420deg) translateY(-#{$circle-radius}) rotate(-420deg);
+    }
+}
+
+@keyframes rotateCircle3 {
+    0% {
+        transform: translate(-50%, -50%) rotate(120deg) translateY(-#{$circle-radius}) rotate(-120deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(480deg) translateY(-#{$circle-radius}) rotate(-480deg);
+    }
+}
+
+@keyframes rotateCircle4 {
+    0% {
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-#{$circle-radius}) rotate(-180deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(540deg) translateY(-#{$circle-radius}) rotate(-540deg);
+    }
+}
+
+@keyframes rotateCircle5 {
+    0% {
+        transform: translate(-50%, -50%) rotate(240deg) translateY(-#{$circle-radius}) rotate(-240deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(600deg) translateY(-#{$circle-radius}) rotate(-600deg);
+    }
+}
+
+@keyframes rotateCircle6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(300deg) translateY(-#{$circle-radius}) rotate(-300deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(660deg) translateY(-#{$circle-radius}) rotate(-660deg);
+    }
+}
+//end nubos logo
+
 
 @import "about-section";
 @import "slider-section";
