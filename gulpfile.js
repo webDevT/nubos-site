@@ -33,9 +33,9 @@ const compileSass = () => {
 const compileCSS = () => {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/slick-carousel/slick/slick.css'
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/swiper/swiper-bundle.min.css'
     ])
-        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(concat('libs.css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('app/css'));
@@ -61,7 +61,8 @@ const processJS = () => {
 const compileJS = () => {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js'
+        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/swiper/swiper-bundle.min.js'
     ])
         .pipe(concat('libs.js'))
         .pipe(rename({ suffix: '.min' }))

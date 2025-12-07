@@ -689,10 +689,9 @@ Wij laten het graag aan je zien.
 	</div>	
 
 	<div class="slider">
-		
-			<div class="slider__viewport">
-			<div class="slider__track">
-				<div class="slider__item is-active">
+		<div class="slider__viewport swiper">
+			<div class="slider__track swiper-wrapper">
+				<div class="slider__item swiper-slide">
 					<img src="img/image1.png" alt="" class="slider__image">
 
 					<div class="slider__content">
@@ -701,18 +700,7 @@ Wij laten het graag aan je zien.
 					</div>
 				</div>
 
-				<div class="slider__item">
-					<img src="img/image1.png" alt="" class="slider__image">
-					<div class="slider__content">
-						<div class="tag">
-							Joinuz
-						</div>
-						<h2 class="h2">81% meer geschikte
-							kandidaten vanuit Instagram</h2>
-					</div>
-				</div>
-
-				<div class="slider__item">
+				<div class="slider__item swiper-slide">
 					<img src="img/image1.png" alt="" class="slider__image">
 					<div class="slider__content">
 						<div class="tag">
@@ -723,7 +711,7 @@ Wij laten het graag aan je zien.
 					</div>
 				</div>
 
-				<div class="slider__item">
+				<div class="slider__item swiper-slide">
 					<img src="img/image1.png" alt="" class="slider__image">
 					<div class="slider__content">
 						<div class="tag">
@@ -734,7 +722,40 @@ Wij laten het graag aan je zien.
 					</div>
 				</div>
 
-				<div class="slider__item">
+				<div class="slider__item swiper-slide">
+					<img src="img/image1.png" alt="" class="slider__image">
+					<div class="slider__content">
+						<div class="tag">
+							Joinuz
+						</div>
+						<h2 class="h2">81% meer geschikte
+							kandidaten vanuit Instagram</h2>
+					</div>
+				</div>
+
+				<div class="slider__item swiper-slide">
+					<img src="img/image1.png" alt="" class="slider__image">
+					<div class="slider__content">
+						<div class="tag">
+							Joinuz
+						</div>
+						<h2 class="h2">81% meer geschikte
+							kandidaten vanuit Instagram</h2>
+					</div>
+				</div>
+
+				<div class="slider__item swiper-slide">
+					<img src="img/image1.png" alt="" class="slider__image">
+					<div class="slider__content">
+						<div class="tag">
+							Joinuz
+						</div>
+						<h2 class="h2">81% meer geschikte
+							kandidaten vanuit Instagram</h2>
+					</div>
+				</div>
+
+				<div class="slider__item swiper-slide">
 					<img src="img/image1.png" alt="" class="slider__image">
 					<div class="slider__content">
 						<div class="tag">
@@ -747,7 +768,6 @@ Wij laten het graag aan je zien.
 
 			</div>
 		</div>
-		
 	</div>
 
 </section>
@@ -872,6 +892,17 @@ sneller en efficienter wordt!
 	
 	
 	<script src="js/libs.min.js"></script>
+	<!-- Swiper fallback через CDN, якщо не завантажився з libs -->
+	<script>
+		if (typeof Swiper === 'undefined') {
+			var script = document.createElement('script');
+			script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+			script.onload = function() {
+				console.log('Swiper loaded from CDN');
+			};
+			document.head.appendChild(script);
+		}
+	</script>
 	<script src="js/main.js"></script>
 </body>
 </html>
