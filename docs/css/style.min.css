@@ -1753,6 +1753,110 @@ img {
             transform: translate(-50%, -50%) rotate(660deg) translateY(-180px) rotate(-660deg);
   }
 }
+.hero-content-center {
+  text-align: center;
+  width: 650px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-item__image {
+  width: 100%;
+  aspect-ratio: 570/442;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-item__image-wrapper {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.blog-item {
+  margin-bottom: 40px;
+  display: block;
+}
+.blog-item .h2 {
+  margin-bottom: 10px;
+}
+
+.blog__date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+
+.blog-item .blog-item__image {
+  -webkit-transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-filter: brightness(1) contrast(1);
+          filter: brightness(1) contrast(1);
+}
+
+.blog-item:hover .blog-item__image {
+  -webkit-transform: scale(1.05) rotate(1deg);
+      -ms-transform: scale(1.05) rotate(1deg);
+          transform: scale(1.05) rotate(1deg);
+  -webkit-filter: brightness(1.1) contrast(1.1);
+          filter: brightness(1.1) contrast(1.1);
+}
+
+.blog-item__image-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pagination-section {
+  padding-bottom: 100px;
+}
+
+.pagination-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(27, 51, 79);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.pagination-btn svg {
+  fill: #fff;
+}
+
+.pagination-btn.active {
+  background-color: #3FF1B2;
+  color: rgb(9, 26, 46);
+}
+
+.pagination-btn:hover {
+  background-color: rgb(119, 255, 207);
+  color: rgb(9, 26, 46);
+}
+.pagination-btn:hover svg {
+  fill: rgb(9, 26, 46);
+}
+
 .about {
   padding-top: 150px;
   background-image: url(../img/about.svg);
@@ -2842,6 +2946,9 @@ img {
   }
   .nubos-logo {
     width: 56px;
+  }
+  .blog {
+    padding-top: 0;
   }
 }
 /* Extra Small Devices, Phones */
