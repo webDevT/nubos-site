@@ -344,6 +344,18 @@
 			margin-right: auto;
 		}
 	}
+	.blog-single__image {
+		width: 100%;
+	}
+	.hero-section .blog__date {
+		margin-top: 0;
+	}
+	.blog-single__image {
+		margin-top: 20px;
+	}
+	.hero-section--blog .hero-section__content {
+		padding-bottom: 0;
+	}
 	
 }
 
@@ -578,6 +590,12 @@
 
 	.blog {
 		padding-top: 0;
+	}
+	.hero-section--blog {
+		padding-top: 35px;
+	}
+	.article-navigation {
+		margin-bottom: 30px;
 	}
 	
 
