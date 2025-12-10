@@ -45,6 +45,10 @@
         }
     }
     
+    .slider__item {
+        cursor: pointer;
+    }
+    
     @media (min-width: 1600px) {
         width: 100%;
         max-width: 100%;
@@ -53,6 +57,10 @@
 
 .slider__viewport:active {
     cursor: grabbing;
+    
+    .slider__item {
+        cursor: pointer;
+    }
 }
 
 .slider__track {
@@ -76,11 +84,16 @@
     transform: scale(0.92);
     transition: opacity 0.3s ease, transform 0.3s ease;
     position: relative;
-    pointer-events: none;
+    pointer-events: auto;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    cursor: pointer;
+    
+    &.swiper-no-swiping {
+        cursor: pointer !important;
+    }
     
     &.swiper-slide {
         width: calc((100vw - 10px) / 3) !important;

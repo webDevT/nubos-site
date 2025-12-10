@@ -825,6 +825,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 100%;
 }
 
 .card__image {
@@ -887,6 +888,7 @@ img {
   background: rgb(9, 26, 46);
   padding: 23px 23px 32px 23px;
   border-radius: 8px;
+  min-height: 100%;
 }
 
 .info-card:hover {
@@ -960,6 +962,7 @@ img {
   background: #091A2E;
   padding: 50px 37px;
   border-radius: 8px;
+  min-height: 100%;
 }
 
 .benefits__card:hover {
@@ -1953,6 +1956,10 @@ img {
   margin-right: 10px;
 }
 
+.slider__item {
+  display: block;
+}
+
 .about {
   padding-top: 150px;
   background-image: url(../img/about.svg);
@@ -2096,6 +2103,9 @@ img {
     max-width: 100%;
   }
 }
+.slider__viewport .slider__item {
+  cursor: pointer;
+}
 @media (min-width: 1600px) {
   .slider__viewport {
     width: 100%;
@@ -2106,6 +2116,9 @@ img {
 .slider__viewport:active {
   cursor: -webkit-grabbing;
   cursor: grabbing;
+}
+.slider__viewport:active .slider__item {
+  cursor: pointer;
 }
 
 .slider__track {
@@ -2144,11 +2157,15 @@ img {
   transition: opacity 0.3s ease, transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
   position: relative;
-  pointer-events: none;
+  pointer-events: auto;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  cursor: pointer;
+}
+.slider__item.swiper-no-swiping {
+  cursor: pointer !important;
 }
 .slider__item.swiper-slide {
   width: calc((100vw - 10px) / 3) !important;

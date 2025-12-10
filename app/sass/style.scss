@@ -260,6 +260,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-width: 100%;
 }
 .card__image {
     width: auto;
@@ -314,6 +315,7 @@ img {
     background: $blue;
     padding: 23px 23px 32px 23px;
     border-radius: 8px;
+    min-height: 100%;
 }
 .info-card:hover {
     background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
@@ -377,6 +379,7 @@ img {
     background: #091A2E;
     padding: 50px 37px;
     border-radius: 8px;
+    min-height: 100%;
 }
 .benefits__card:hover {
     background: linear-gradient(180deg, #FFE243 0%, #3FF1B2 100%);
@@ -1138,6 +1141,9 @@ $circle-radius: 180px;
     img {
         margin-right: 10px;
     }
+}
+.slider__item {
+    display: block;
 }
 @import "about-section";
 @import "slider-section";

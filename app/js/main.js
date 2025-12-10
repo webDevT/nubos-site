@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let isSwiping = false;
+        
         const swiper = new Swiper(sliderViewport, {
             loop: true,
             centeredSlides: true,
@@ -94,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             spaceBetween: 5,
             speed: 400,
             watchOverflow: true,
+            noSwipingClass: 'swiper-no-swiping',
             breakpoints: {
                 650: {
                     slidesPerView: 'auto',
@@ -116,8 +121,50 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 slideChange: function() {
                     updateActiveSlide(this);
+                },
+                touchStart: function(swiper, event) {
+                    touchStartX = event.touches[0].clientX;
+                    touchStartY = event.touches[0].clientY;
+                    isSwiping = false;
+                },
+                touchMove: function(swiper, event) {
+                    const touchEndX = event.touches[0].clientX;
+                    const touchEndY = event.touches[0].clientY;
+                    const diffX = Math.abs(touchEndX - touchStartX);
+                    const diffY = Math.abs(touchEndY - touchStartY);
+                    
+                    if (diffX > diffY && diffX > 10) {
+                        isSwiping = true;
+                    }
                 }
             }
+        });
+        
+        const sliderLinks = sliderViewport.querySelectorAll('.slider__item');
+        sliderLinks.forEach(function(link) {
+            link.classList.add('swiper-no-swiping');
+            
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#' && href !== '') {
+                    window.location.href = href;
+                } else if (href === '#') {
+                    e.preventDefault();
+                }
+            });
+            
+            link.addEventListener('touchend', function(e) {
+                if (!isSwiping) {
+                    const href = this.getAttribute('href');
+                    if (href && href !== '#' && href !== '') {
+                        window.location.href = href;
+                    }
+                    e.preventDefault();
+                }
+                setTimeout(function() {
+                    isSwiping = false;
+                }, 100);
+            });
         });
     }
     

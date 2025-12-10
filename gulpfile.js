@@ -93,7 +93,6 @@ const copyImages = () => {
 const copyImagesProd = () => {
     const { execSync } = require('child_process');
     try {
-        // Змінюємо шлях для продакшн збирання
         execSync('node copy-images-prod.js', { stdio: 'inherit' });
         console.log('Images copied to docs successfully without gulp processing');
     } catch (error) {
