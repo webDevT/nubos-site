@@ -1145,6 +1145,26 @@ $circle-radius: 180px;
 .slider__item {
     display: block;
 }
+.illustration-wrapper {
+    width: 600px;
+    max-width: 100%;
+    aspect-ratio: 600 / 600;
+    background: url('../img/illustration-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        max-width: 68%;
+        max-height: 68%;
+    }
+
+}
 @import "about-section";
 @import "slider-section";
 @import "media";
