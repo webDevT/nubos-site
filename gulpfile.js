@@ -21,7 +21,7 @@ const cleanTemp = async () => {
 // Sass compilation
 const compileSass = () => {
     return gulp.src('app/sass/style.scss')
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions']
         }))
